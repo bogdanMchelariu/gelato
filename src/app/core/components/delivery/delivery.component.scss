@@ -1,0 +1,10 @@
+@import 'variables';
+
+app-delivery {
+  width: 100%;
+  height: 93%;
+  overflow: auto;
+  mat-card {
+    margin: $content-padding;
+  }
+}

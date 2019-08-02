@@ -1,0 +1,32 @@
+@import 'variables';
+
+app-order {
+  width: 93%;
+
+  height: 60%;
+
+  margin: $content-padding;
+
+  @media (min-width: 576px) {
+    width: 50%;
+    height: 90%;
+  }
+
+  mat-card {
+    height: inherit;
+    mat-card-content {
+      height: calc(100% - 94px);
+      overflow: auto;
+      mat-form-field {
+        padding: $content-padding-sm;
+      }
+      mat-toolbar {
+        height: 40px;
+      }
+    }
+    mat-card-actions {
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+}

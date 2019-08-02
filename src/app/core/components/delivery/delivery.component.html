@@ -1,0 +1,9 @@
+<mat-card *ngFor="let shipment of orderService.shipmentList">
+  <mat-card-header>
+    <mat-card-title>{{ shipment.name }}</mat-card-title>
+    <mat-card-subtitle>Price: {{ shipment.price }}</mat-card-subtitle>
+  </mat-card-header>
+  <mat-card-content>
+    <h4>Delivery date: {{ shipment.minDeliveryDate | date }} - {{ shipment.maxDeliveryDate | date }}</h4>
+  </mat-card-content>
+</mat-card>

@@ -1,0 +1,3 @@
+<app-loader *ngIf="orderService.isLoading"></app-loader>
+<app-order></app-order>
+<app-delivery *ngIf="orderService.shipmentList"></app-delivery>
